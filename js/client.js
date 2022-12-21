@@ -18,7 +18,7 @@ const append = (message, position) => {
     }
 }
 
-//const name = prompt('Enter your name to join.');
+const name = prompt('Enter your name to join.');
 socket.emit('new-user-joined', name);
 
 socket.on('user-joined', name => {
